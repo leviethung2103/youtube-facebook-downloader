@@ -153,6 +153,14 @@ To deploy the Next.js frontend using `pm2`, follow these steps:
 
 Screenshots of the application can be found in the `screenshots` directory.
 
+*Screenshot 1: Video download page*
+![Screenshot 2](screenshots/home_page.png)
+
+*Screenshot 2: Home page of the application*
+![Screenshot 1](screenshots/download_video.png)
+
+
+
 ## Managing Screen Sessions
 
 To list all active screen sessions:
