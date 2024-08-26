@@ -62,6 +62,14 @@ The frontend should now be running on `http://localhost:3000`.
 - The backend server handles video extraction and downloading, while the frontend server provides the user interface.
 - You can customize the project further by modifying the backend and frontend code as needed.
 
+## Screenshots
+
+Screenshots of the application can be found in the `screenshots` directory.
+
 For more information on how to use the project, refer to the documentation provided in the respective backend and frontend directories.
+
+<img src="screenshots/home_page.png" alt="Home Page" width="600">
+<img src="screenshots/download_video.png" alt="Download Video" width="600">
+
 
 Happy downloading!
