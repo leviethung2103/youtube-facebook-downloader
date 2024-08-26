@@ -49,7 +49,12 @@ To set up the frontend, follow these steps:
    npm install
    ```
 
-3. **Run the development server:**
+3. **Create a `.env` file in the root of your `frontend` directory and add the following:**
+   ```env
+   NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
+   ```
+
+4. **Run the development server:**
    ```bash
    npm run dev
    ```

@@ -10,6 +10,18 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `app/api` directory is mapped to `/api/*`. Folders in this directory with files named `route.ts` are treated as [Route handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) instead of pages.
 
+## Environment Variables
+
+Create a `.env` file in the root of your `frontend` directory and add the following:
+
+```env
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
+```
+
+## Screenshots
+
+Screenshots of the application can be found in the `screenshots` directory.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
