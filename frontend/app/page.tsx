@@ -46,7 +46,7 @@ export default function Home() {
     try {
       if (isYouTubeUrl(url)) {
         // Fetch video information
-        const infoResponse = await fetch("http://localhost:3001/api/youtube-info", {
+        const infoResponse = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/youtube-info`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export default function Home() {
         setVideoInfo(videoData);
       } else if (isFacebookUrl(url)) {
         // Fetch video information
-        const infoResponse = await fetch("http://localhost:3001/api/youtube-info", {
+        const infoResponse = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/facebook-info`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -93,7 +93,7 @@ export default function Home() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:3001/api/youtube-download", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/youtube-download`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -106,8 +106,8 @@ export default function Home() {
       }
 
       const data = await response.json();
-      const downloadUrl = `http://localhost:3001/downloads/${encodeURIComponent(data.filename)}`;
-      
+      const downloadUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}/downloads/${encodeURIComponent(data.filename)}`;
+
       const link = document.createElement("a");
       link.href = downloadUrl;
       link.download = data.filename;
